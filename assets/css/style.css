@@ -8,7 +8,7 @@ body {
 	color: #777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	line-height: 30px;
-	text-align: left;
+	text-align: center;
 	/* Set width to 1200 instead of 960 for better layout (in my humble opinion). */
 	width: 1200px;
 }
@@ -79,6 +79,13 @@ a:hover {
 	color: none;
 	border-right: none;
 }
+.iconcontact {
+	width: 180px;
+	height: auto;
+	color: none;
+	border-right: none;
+}
+
 
 /* Rotates social icon in contacts on hover. */
 .icon:hover {
@@ -88,10 +95,15 @@ a:hover {
 	-moz-transform: rotate(-10deg);
 	-o-transform: rotate(-10deg);
 }
-
+.iconcontact:hover {
+	transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+}
 section	{
 	background-color: #ffffff;
-	float: left;
 	color: #777777;
 	border: 2px solid #dddddd;
 }
@@ -145,7 +157,7 @@ footer {
 .box {
 	display: inline-block;
 	width: 250px;
-	height: 100px;
+	height: 180px;
 	margin: 20px;
 }
 
@@ -192,14 +204,35 @@ footer {
 	background-color: #374865;
 }
 
-#social-links,
+
 #myFriend {
-	float: right;
+	float: left;
+	padding: 10px;
+	width: 300px;
+	top: 30px;
+	text-align: center;
+	margin-right: 50px;
+	margin-top: 30px
+}
+#social-links
+{
+	float: left;
 	padding: 10px;
 	width: 270px;
 	top: 30px;
 	text-align: center;
-	margin-right: 125px;
+	margin-left: 180px;
+	margin-right: 50px;
+	margin-top: 30px
+}
+#contactme
+{
+	float: left;
+	padding: 10px;
+	width: 220px;
+	top: 30px;
+	text-align: center;
+	margin-right: 50px;
 	margin-top: 30px
 }
 
@@ -208,8 +241,8 @@ footer {
 #skill,
 #project-portfolio {
 	position: relative;
-	text-align: left;
-	width: 650px;
+	text-align: center;
+	width: 1000px;
 	top: 30px;
 	margin-left: 125px;
 	margin-bottom: 50px;
@@ -224,6 +257,7 @@ footer {
 	clear: both;
 	float: left;
 	margin-right: 20px;
+	margin-left: 40px;
 	width: 200px;
 	height: 200px;
 }
